@@ -10,7 +10,7 @@ public class Palindromo {
             throw new RuntimeException("Campo: " + palindromo + " está vazio, em branco ou nulo");
 
         System.out.println(palindromo);
-        String palidromoSemEspacos = palindromo.trim().toLowerCase(Locale.ROOT).replaceAll("[^a-zA-Z0-9]", "");
+        String palidromoSemEspacos = palindromo.toLowerCase(Locale.ROOT).replaceAll("[^a-zA-Z0-9]", "");
         System.out.println(palidromoSemEspacos);
 
         for (int i = 0, j = palidromoSemEspacos.length() - 1; i < palidromoSemEspacos.length() & j >= 0; i++, j--) {
